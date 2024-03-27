@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <style>
+        .login{
+            background-color: darkgray;
+            width: 35vw;
+        }
+    #fname{
+    margin-left: 20px; 
+    }
+    #mname{
+    margin-left: 10px; 
+    }
+    #lsname{
+    margin-left: 30px; 
+    }
+    #email{
+    margin-left: 52px; 
+    }
+    #psd{
+    margin-left: 35px; 
+    }
+    #address{
+    margin-left: 45px;
+    height: 40px; 
+    width: 200px;
+    }
+    .manage{
+    height: 20px;
+    width: 200px;
+    }
+    .sub{
+        height: 30px;
+        width: 70px;
+        margin-left: 141px;
+    }
+    </style>
+</head>
+<body>
+    <div class="login">
+    <fieldset>
+    <caption><h2>LOGIN FORM</h2></caption>
+    <label for="fname"><b>FirstName :</b></label>
+    <input type="text" name="fname" id="fname" class="manage"><br><br>
+    <label for="mname"><b>MiddleName :</b></label>
+    <input type="text" name="mname" id="mname" class="manage"><br><br>
+    <label for="lsname"><b>LastName :</b></label>
+    <input type="text" name="lsname" id="lsname" class="manage"><br><br>
+    <label for="email"><b>E-mail :</b></label>
+    <input type="email" name="" id="email" class="manage"><br><br>
+    <label for="psd"><b>Password :</b></label>
+    <input type="password" name="" id="psd" class="manage"><br><br>
+    <label for="address"><b>Address :</b></label>
+    <textarea name="address" id="address" cols="20" rows="3"></textarea><br><br>
+    <input type="button" value="Submit" class="sub" onclick="Submit()">
+</fieldset>
+</div>
+
+
+<script>
+function Submit(){
+    console.log(document.getElementById("fname").value);
+    console.log(document.getElementById("mname").value); 
+    console.log(document.getElementById("lsname").value); 
+    console.log(document.getElementById("email").value); 
+    console.log(document.getElementById("psd").value); 
+    console.log(document.getElementById("address").value); 
+}
+</script>
+</body>
+</html>
